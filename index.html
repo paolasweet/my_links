@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pao &#128156; All my links</title>
+<title>Sweet Pao &#127798;&#65039; All my links</title>
 <meta name="description" content="Colombian creator living in Mallorca. All my pages in one place. 18+ only.">
 <meta name="robots" content="noindex">
 <meta name="p:domain_verify" content="095dcbbf5b0d5b83a437a2facf2cc386"/>
@@ -14,13 +14,15 @@
   html,body{margin:0}
   body{min-height:100vh;background:var(--sand);color:var(--sea);
        font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.45}
-  .wrap{max-width:460px;margin:0 auto;padding:40px 20px 32px}
+  .wrap{max-width:460px;margin:0 auto;padding:24px 20px 32px}
   header{text-align:center;margin-bottom:28px}
-  .avatar{width:96px;height:96px;border-radius:50%;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;
-          background:var(--sea);color:var(--sand);font-size:2.4rem;font-weight:700;overflow:hidden;
-          box-shadow:0 0 0 4px var(--shell),0 0 0 6px var(--coral)}
-  .avatar img{width:100%;height:100%;object-fit:cover;display:block}
-  h1{font-size:1.7rem;margin:0 0 6px;letter-spacing:-.01em}
+  .hero{margin:0 auto 20px;width:100%;height:0;padding-top:125%;border-radius:24px;overflow:hidden;position:relative;
+         background:var(--sea);box-shadow:0 18px 40px rgba(19,50,75,.22)}
+  .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+  .hero-fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+                  color:var(--sand);font-size:2rem;font-weight:800;letter-spacing:-.02em}
+  .hero.has-img .hero-fallback{display:none}
+  h1{font-size:1.9rem;margin:0 0 6px;letter-spacing:-.01em}
   .tag{margin:0;color:var(--muted)}
   h2{font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin:28px 0 12px;font-weight:700}
   ul{list-style:none;margin:0;padding:0}
@@ -29,8 +31,10 @@
         border-left:6px solid var(--brand);border-radius:14px;color:var(--sea);text-decoration:none;
         transition:transform .15s ease,box-shadow .15s ease}
   .card:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(19,50,75,.10)}
-  .badge{width:44px;height:44px;flex:none;border-radius:12px;display:flex;align-items:center;justify-content:center;background:var(--brand);color:#fff;font-size:1.4rem}
+  .badge{width:44px;height:44px;flex:none;border-radius:12px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:var(--brand);color:#fff;font-size:1.4rem}
   .badge svg{fill:#fff;color:#fff}
+  .badge .logo{width:100%;height:100%;object-fit:cover;display:none}
+  .badge.has-logo .logo{display:block} .badge.has-logo .mono{display:none}
   .mono{font-weight:800;font-size:1.05rem;letter-spacing:-.02em}
   .txt{display:flex;flex-direction:column;flex:1;min-width:0}
   .txt strong{font-size:1.08rem}
@@ -87,8 +91,10 @@
 
 <main class="wrap">
   <header>
-    <div class="avatar" id="avatar">P</div>
-    <h1>Pao &#128156;</h1>
+    <figure class="hero" id="hero">
+      <div class="hero-fallback" aria-hidden="true">Sweet Pao</div>
+    </figure>
+    <h1>Sweet Pao &#127798;&#65039;</h1>
     <p class="tag">Colombian girl living in Mallorca &#127796;<br>English &amp; Espa&ntilde;ol</p>
   </header>
 
@@ -101,17 +107,17 @@
         <span class="go" aria-hidden="true">&rarr;</span>
       </a></li>
       <li><a class="card" href="https://fansly.com/sweetpao" target="_blank" rel="noopener noreferrer" style="--brand:#1FA7F8">
-        <span class="badge" aria-hidden="true"><span class="mono">F</span></span>
+        <span class="badge" aria-hidden="true"><img class="logo" data-src="fansly.png" alt=""><span class="mono">F</span></span>
         <span class="txt"><strong>Fansly</strong><small>@sweetpao</small></span>
         <span class="go" aria-hidden="true">&rarr;</span>
       </a></li>
       <li><a class="card" href="https://www.fanvue.com/sweet.pao" target="_blank" rel="noopener noreferrer" style="--brand:#2E2E2E">
-        <span class="badge" aria-hidden="true"><span class="mono">Fv</span></span>
+        <span class="badge" aria-hidden="true"><img class="logo" data-src="fanvue.png" alt=""><span class="mono">Fv</span></span>
         <span class="txt"><strong>Fanvue</strong><small>@sweet.pao</small></span>
         <span class="go" aria-hidden="true">&rarr;</span>
       </a></li>
       <li><a class="card" href="https://mym.fan/Pao_sweet" target="_blank" rel="noopener noreferrer" style="--brand:#E5097F">
-        <span class="badge" aria-hidden="true"><span class="mono">M</span></span>
+        <span class="badge" aria-hidden="true"><img class="logo" data-src="mym.png" alt=""><span class="mono">M</span></span>
         <span class="txt"><strong>MYM</strong><small>@Pao_sweet</small></span>
         <span class="go" aria-hidden="true">&rarr;</span>
       </a></li>
@@ -141,7 +147,7 @@
     </ul>
   </section>
 </main>
-<footer class="wrap">18+ only &middot; &copy; 2026 Pao</footer>
+<footer class="wrap">18+ only &middot; &copy; 2026 Sweet Pao</footer>
 
 <script>
 (function(){
@@ -152,10 +158,15 @@
   if(root.classList.contains('gate')) yes.focus();
   yes.addEventListener('click',function(){ try{sessionStorage.setItem(KEY,'1');}catch(e){} open(); });
   no.addEventListener('click',function(){ root.classList.add('denied'); });
-  // optional profile photo: upload avatar.jpg next to index.html
-  var img=new Image(); img.alt='Pao';
-  img.onload=function(){ var a=document.getElementById('avatar'); a.textContent=''; a.appendChild(img); };
-  img.src='avatar.jpg';
+  // hero photo: upload hero.jpg next to index.html
+  var hero=document.getElementById('hero'), img=new Image(); img.alt='Sweet Pao';
+  img.onload=function(){ hero.insertBefore(img, hero.firstChild); hero.classList.add('has-img'); };
+  img.src='hero.jpg';
+  // platform logos: upload fansly.png, fanvue.png, mym.png next to index.html
+  Array.prototype.forEach.call(document.querySelectorAll('img.logo'),function(l){
+    l.onload=function(){ l.parentNode.classList.add('has-logo'); };
+    l.src=l.getAttribute('data-src');
+  });
 })();
 </script>
 </body>
